@@ -1,0 +1,126 @@
+.about {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    /* margin-top: 50px; */
+}
+
+.aboutDown {
+    display: flex;
+}
+
+.aboutLeft {
+    flex-basis: 40%;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.aboutTitle {
+    color: #c0c0c0;
+    margin: 35px 0 15px 0;
+
+    /* animation: aboutTitle .5s linear forwards;
+    opacity: 0; */
+}
+
+@keyframes aboutTitle {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.aboutText {
+    color: #adadad;
+    padding-bottom: 50px;
+
+    /* animation: aboutTitle .5s linear forwards;
+    opacity: 0;
+    animation-delay: .5s; */
+}
+
+.cv_div {
+    /* opacity: 0;
+    animation-delay: 1s;
+    animation: aboutTitle .5s linear forwards; */
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    justify-content: center;
+    grid-gap: 10px;
+    flex-basis: 60%;
+}
+
+.card {
+    color: #B1B1B1;
+    padding: 20px;
+    box-shadow: 1px 1px 20px rgb(63, 51, 90);
+    min-height: 400px;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 20px rgba(181, 247, 0, 0.541);
+    transform: scale(1.05) !important;
+    transition: transform .5s ease;
+}
+
+.cardTitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid rgb(63, 51, 90);
+}
+
+.cetagory {
+    color: #0074e0;
+    margin-bottom: 0;
+}
+
+.cetagoryMeterials {
+    margin-top: 6px;
+}
+
+.tools {
+    margin: 40px 0 4px 0;
+    color: #0074e0;
+}
+
+.ul li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 1285px) {
+    .aboutDown {
+        flex-direction: column;
+    }
+
+    .aboutLeft {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .grid_container {
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .aboutLeft {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 473px) {
+    .grid_container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+}

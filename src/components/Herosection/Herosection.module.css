@@ -1,0 +1,158 @@
+.herosectionBackground {
+  min-height: 730px;
+  background: hsl(0 0% 0% / 0.65)
+    url("../../images/background/herosectionBackground.jpg");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.herosection {
+  display: flex;
+  width: 100%;
+}
+
+.herosectionLeft,
+.herosectionRight {
+  flex-basis: 50%;
+  margin: 0 auto;
+}
+
+.beforeName {
+  color: #9c9494;
+
+  animation: name-animation 500ms linear forwards;
+}
+
+@keyframes name-animation {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.name {
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  color: rgba(245, 30, 2, 0.911);
+  font-family: var(--font-q);
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+
+  opacity: 0;
+  animation: name-animation 500ms linear forwards;
+  animation-delay: 500ms;
+}
+
+.name_chinese {
+  font-family: var(--font-q);
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: rgba(245, 30, 2, 0.911);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.subtitle {
+  color: #9c9494;
+  margin: -5px 0 40px 0;
+  letter-spacing: 3px;
+  font-size: 1.7rem;
+
+  opacity: 0;
+  animation: name-animation 500ms linear forwards;
+  animation-delay: 1s;
+}
+
+.sosialSection {
+  opacity: 0;
+  animation: contact-animation 500ms linear forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes contact-animation {
+  0% {
+    opacity: 0;
+    transform: matrix(0.5, 0, 0, 0, 50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.sosialLink {
+  margin-top: 15px;
+}
+
+.sosialLink img {
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.5s ease;
+  background-color: whitesmoke;
+}
+
+.sosialLink img:hover {
+  transform: scale(1.2);
+}
+
+.herosectionRight {
+  text-align: right;
+}
+
+.profilePhoto {
+  margin-bottom: -3px;
+
+  opacity: 0;
+  animation: photo-animation 1s ease-in forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes photo-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 858px) {
+  .herosection {
+    flex-direction: column;
+    padding-top: 8rem;
+  }
+
+  .herosectionLeft,
+  .herosectionRight {
+    flex-basis: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .herosectionRight {
+    margin-top: 5rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 407px) {
+  .herosectionRight {
+    margin-top: 2rem;
+  }
+
+  .profilePhoto {
+    width: 293px;
+    height: auto;
+  }
+}

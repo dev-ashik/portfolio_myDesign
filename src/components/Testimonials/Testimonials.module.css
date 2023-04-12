@@ -1,0 +1,63 @@
+.testimonialsSwiper_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.swiperItem {
+  color: white;
+  position: relative;
+  height: 35rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(124, 124, 124, 0.404);
+  padding: 1rem 5rem !important;
+  border-radius: 10px;
+}
+
+.swiperItem img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiperItem p {
+  font-size: 2rem;
+  font-family: var(--font-u);
+  margin-top: 7rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.swiperItem h3 {
+  font-size: 1.9rem;
+  text-align: center;
+  font-family: var(--font-u);
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.swiperItem span {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: var(--font-u);
+  display: block;
+  font-weight: 300;
+}
+
+@media (max-width: 770px) {
+  .swiperItem {
+    padding: 1rem !important;
+  }
+}

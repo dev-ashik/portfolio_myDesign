@@ -1,0 +1,55 @@
+.servicesBackgrond {
+    background-color: #282323;
+}
+
+.services {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.sectionName {
+    color: #B1B1B1;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.servicesCardArea {
+    display: flex;
+    justify-content: center;
+}
+
+.servicesCard {
+    width: 240px;
+    height: 180px;
+    background-color: #C4C4C4;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+
+.cardTitle {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    /* margin: 10px 0; */
+}
+
+.cardDescription {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.webDevelopmentServices {
+    /* display: flex;
+    justify-content: center; */
+    
+}
+
+.line {
+    border-right: 4px solid #C4C4C4;
+    height: 140px;
+    margin-top: 34px;
+    margin-left: 100px;
+    margin-right: 100px;
+}

@@ -1,0 +1,40 @@
+.aboutTitle_english {
+    font-family: var(--font-u);
+    font-size: 4rem;
+}
+
+.aboutTitle_chinese {
+    font-size: 3.5rem;
+}
+
+.aboutTitle_chinese, .aboutText_chinese, .cardTitle_chinese, .cetagory_chinese, .tools_chinese {
+    font-family: var(--font-chinese);
+}
+
+.aboutText_english, .tool_english, .cetagoryMeterials_english, .cetagoryMeterials_chinese, .tool_chinese {
+    font-family: var(--font-u);
+    font-size: 1.7rem;
+}
+
+.aboutText_chinese {
+    font-size: 1.7rem;
+}
+
+.cardTitle_english {
+    font-family: var(--font-q);
+    font-size: 2.5rem;
+}
+
+.cardTitle_chinese {
+    font-size: 2.5rem;
+}
+
+.cetagory_english, .tools_english, .cetagory_chinese, .tools_chinese {
+    font-family: var(--font-rso);
+    font-size: 1.8rem;
+}
+
+
+/* .cetagoryMeterials_english  {
+    font-family: var(--font-u);
+} */

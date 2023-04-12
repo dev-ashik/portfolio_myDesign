@@ -1,0 +1,11 @@
+.blog_visitMessage_english {
+    font-family: var(--font-u);   
+}
+
+.blog_topicName_english {
+    font-family: var(--font-q);
+}
+
+.blog_visitMessage_chinese, .blog_topicName_chinese {
+    font-family: var(--font-chinese); 
+}

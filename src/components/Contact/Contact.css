@@ -1,0 +1,10 @@
+.label_english {
+    font-family: var(--font-q);
+}
+.label_chinese, .nameInput_chinese {
+    font-family: var(--font-chinese);
+}
+
+.nameInput_english {
+    font-family: var(--font-u);
+}

@@ -1,0 +1,120 @@
+/* common */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.primary_navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary_navigation a {
+  font-size: 17px;
+  text-decoration: none;
+  color: var(--color5);
+  text-transform: uppercase;
+  padding: 7px 13px;
+}
+
+.primary_navigation a > .en {
+  font-family: var(--font-rso);
+}
+
+.primary_navigation a > .cn {
+  font-family: "Kameron", serif;
+  font-family: "Racing Sans One", cursive;
+  font-family: "ZCOOL XiaoWei", serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.primary_navigation a:active {
+  color: black !important;
+}
+
+.primary_navigation a:hover {
+  color: #97bcc9;
+  background-color: rgb(39, 39, 39);
+  border-radius: 30px;
+  transition: 0.7s;
+}
+
+.mobile_nav_toggle {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .primary_navigation a {
+    font-size: 15px;
+  }
+
+  .flex {
+    display: flex;
+    gap: var(--gap, 3px);
+  }
+}
+
+@media (max-width: 858px) {
+  .primary_navigation li {
+    /* color: var(--color5); */
+    margin: 1.5rem 0;
+  }
+
+  .primary_navigation {
+    text-align: center;
+  }
+
+  .primary_navigation {
+    --gap: 1em;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2rem;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  /* if brouser not supports */
+  /* @supports (backdrop-filter: blur(1rem)) {
+    .primary_navigation {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(1rem);
+    }
+  } */
+
+  .primary_navigation[data_visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile_nav_toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    /* height: 25px; */
+    background: url("../../../images/icons/menu-icon.svg");
+    /* background-size: cover; */
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 34px;
+    aspect-ratio: 1;
+    /* height width same */
+    border: 0;
+    top: 27px;
+    right: 10rem;
+    color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .mobile_nav_toggle[aria-expanded="true"] {
+    background: url("../../../images/icons/close-icon.svg");
+    background-size: 28px;
+    background-repeat: no-repeat;
+    right: 20px;
+  }
+}

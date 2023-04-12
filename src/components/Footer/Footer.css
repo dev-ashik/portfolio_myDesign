@@ -1,0 +1,32 @@
+.thanks_english {
+    font-family: var(--font-qc);
+    font-size: 59px;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.thanks_chinese {
+    font-family: var(--font-chinese);
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .thanks_english {
+        font-size: 49px;
+        line-height: 33px;
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .thanks_english {
+        font-size: 38px;
+        line-height: 23px;
+        margin-top: -20px;
+    }
+
+}

@@ -1,0 +1,90 @@
+.experienceSwiperSection {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.swiperItem {
+  color: whitesmoke;
+  padding: 40px;
+  height: 43rem !important;
+}
+
+.swiperItem .emplye {
+  font-size: 3rem;
+  font-family: var(--font-u);
+  font-weight: 300;
+}
+
+.swiperItem .companyName {
+  font-size: 2rem;
+  font-family: var(--font-u);
+  font-weight: 400;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background: #676fa1;
+  display: inline-block;
+}
+
+.swiperItem .duration {
+  font-size: 1.8rem;
+  font-family: var(--font-u);
+  font-weight: 100;
+  color: rgba(194, 194, 194, 0.76);
+}
+
+.swiperItem .about {
+}
+
+.swiperItem .about p {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: var(--font-u);
+  color: whitesmoke;
+  margin: 15px 0;
+  display: flex;
+  line-height: 3rem;
+}
+
+.rightArrow {
+  font-size: 3rem !important;
+  margin-right: 10px;
+  color: #676fa1;
+}
+
+.swiperItem_down {
+  position: relative;
+}
+
+.swiperItem_down img {
+  height: 6rem;
+  width: 100%;
+}
+
+.smallContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  cursor: pointer;
+  border: 0.5px solid rgb(66, 66, 66);
+}
+
+.smallContent .emplye {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: var(--font-u);
+}
+.smallContent .companyName {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: var(--font-u);
+}
